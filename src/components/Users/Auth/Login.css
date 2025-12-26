@@ -1,0 +1,21 @@
+.login-wrapper {
+  height: 100vh;
+  background: #eef3ff;
+}
+
+.login-card {
+  width: 400px;
+  border-radius: 12px;
+}
+
+.login-btn {
+  background: #193A64 !important;
+  border: none;
+  color:#fff;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.login-btn:hover {
+  opacity: 0.9;
+}

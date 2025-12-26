@@ -63,7 +63,7 @@ const AdminLogin = ({ setIsLoggedIn, setRole }) => {
               type="email"
               name="email"
               className="form-control"
-              placeholder="Enter Emaill"
+              placeholder="admin@gmail.com"
               required
               value={formData.email}
               onChange={handleChange}
@@ -78,7 +78,7 @@ const AdminLogin = ({ setIsLoggedIn, setRole }) => {
               type={showPass ? "text" : "password"}
               name="password"
               className="form-control"
-              placeholder="Enter Password"
+              placeholder="12345"
              
               required
               value={formData.password}

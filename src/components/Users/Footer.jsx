@@ -7,7 +7,7 @@ const Footer = () => {
   <div class="container">
     <div class="footer-top">
       <div class="footer-about">
-        <h4>Library</h4>
+        <h4>MyBook</h4>
         <p>Explore and borrow your favorite books from our collection. Knowledge is just a click away!</p>
       </div>
       <div class="footer-links">

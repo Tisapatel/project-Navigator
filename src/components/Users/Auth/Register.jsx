@@ -90,7 +90,7 @@ const Register = () => {
               value={form.email}
               onChange={handleChange}
               className={`form-control ${errors.email ? "is-invalid" : ""}`}
-              placeholder="example@gmail.com"
+              placeholder="Enter your email"
             />
             {errors.email && (
               <div className="invalid-feedback">{errors.email}</div>

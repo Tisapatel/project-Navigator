@@ -16,7 +16,6 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-  
     let users = JSON.parse(localStorage.getItem("userData")) || [];
     if (!Array.isArray(users)) users = [users];
 
@@ -25,12 +24,9 @@ const Login = () => {
     );
 
     if (matchedUser) {
-      
       localStorage.setItem("userLogin", "true");
       localStorage.setItem("userRole", "user");
       localStorage.setItem("currentUser", JSON.stringify(matchedUser));
-
-     
       navigate("/", { replace: true });
     } else {
       alert("Invalid User Email or Password!");
@@ -39,6 +35,16 @@ const Login = () => {
 
   return (
     <div className="login-wrapper d-flex align-items-center justify-content-center">
+      {/* Decorative Animated Shapes */}
+      <div className="decorative-shapes">
+        <div className="shape shape-1"></div>
+        <div className="shape shape-2"></div>
+        <div className="shape shape-3"></div>
+        <div className="shape shape-4"></div>
+        <div className="shape shape-5"></div>
+      </div>
+
+      {/* Login Card */}
       <div className="login-card shadow p-4 bg-white rounded">
         <div className="text-center mb-4">
           <img src={logo} width="60" alt="logo" />
@@ -56,7 +62,7 @@ const Login = () => {
               type="email"
               name="email"
               className="form-control"
-              placeholder="example@gmail.com"
+              placeholder="Enter Email"
               required
               value={formData.email}
               onChange={handleChange}

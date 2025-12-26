@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
-import Header from "./Header";
 import Sidebar from "./Sidebar";
 import { FaBars } from "react-icons/fa";
 
@@ -12,9 +11,9 @@ const Layout = ({ handleLogout }) => {
 
   return (
     <>
-      <Header handleLogout={handleLogout} />
+      
 
-      <div className="p-3  text-white d-lg-none w-25">
+      <div className="p-3  text-white d-lg-none w-25" handleLogout={handleLogout}>
         <button className="btn btn-light" onClick={toggleSidebar}>
           <FaBars size={20} />
         </button>

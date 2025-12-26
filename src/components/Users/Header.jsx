@@ -26,7 +26,7 @@ const Header = ({ handleLogout }) => {
       <div className="container d-flex align-items-center justify-content-between">
         <div className="d-flex align-items-center gap-2">
           <img src={logo} alt="Library Logo" className="nav-logo" />
-          <h5 className="mb-0 fw-bold nav-title">Library Management</h5>
+          <h5 className="mb-0 fw-bold nav-title">My Book</h5>
         </div>
 
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
@@ -37,7 +37,7 @@ const Header = ({ handleLogout }) => {
           <ul className="navbar-nav ms-5 mb-2 mb-lg-0 nav-links">
             <li className="nav-item"><NavLink className="nav-link custom-link" to="/">Home</NavLink></li>
             <li className="nav-item ms-4"><NavLink className="nav-link custom-link" to="/about">About</NavLink></li>
-            <li className="nav-item ms-4"><NavLink className="nav-link custom-link" to="/book">Book</NavLink></li>
+           
             <li className="nav-item ms-4"><NavLink className="nav-link custom-link" to="/contact">Contact</NavLink></li>
           </ul>
 
@@ -50,7 +50,7 @@ const Header = ({ handleLogout }) => {
             <ul className="dropdown-menu dropdown-menu-end shadow-sm">
               
               <li>
-                <NavLink className="dropdown-item d-flex align-items-center gap-2" to="/my-books"><FaBook /> My Books</NavLink>
+                <NavLink className="dropdown-item d-flex align-items-center gap-2" to="/my-books"><FaBook /> My Book Collection</NavLink>
               </li>
               <li><hr className="dropdown-divider"/></li>
               <li>

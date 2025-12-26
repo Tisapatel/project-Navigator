@@ -4,103 +4,49 @@ import {
   FaPhoneAlt,
   FaEnvelope,
   FaClock,
-  FaTelegramPlane,
+  FaPaperPlane,
 } from "react-icons/fa";
 import "./Contact.css";
+import MyBooks from './MyBooks';
 
 const Contact = () => {
   return (
-    <section className="contact-section py-5">
-      <div className="container">
-        <div className="row g-4">
-          <div className="col-lg-6">
-            <div className="contact-card p-4">
-              <h3
-                className="text-center  fw-bold mb-3"
-                style={{ color: "#23739C" }}
-              >
-                Contact Information
-              </h3>
+    <section className="new-contact-section">
+      <div className="new-container">
+        {/* Left Info Card */}
+        <div className="contact-info-card">
+          <h2>Let's Connect </h2>
+          <p className="sub-text">
+            Have questions or business inquiries? We're here to help.
+          </p>
 
-              <p className="text-center mb-4">
-                We would love to hear from you! Reach out with any questions,
-                feedback, or orders.
-              </p>
+          <div className="info-item"><FaMapMarkerAlt /> Navsari, Gujarat, India</div>
+          <div className="info-item"><FaPhoneAlt /> +91 98765 43210</div>
+          <div className="info-item"><FaEnvelope /> MyBooks@gmail.com</div>
+          <div className="info-item"><FaClock /> Mon - Sat: 9AM - 8PM</div>
 
-              <div className="d-flex align-items-center gap-3 mb-3">
-                <FaMapMarkerAlt className="contact-icon" />
-                <span>Navsari Municipal Corporation, Navsari</span>
-              </div>
-
-              <div className="d-flex align-items-center gap-3 mb-3">
-                <FaPhoneAlt className="contact-icon" />
-                <span>+91 98765 43210</span>
-              </div>
-
-              <div className="d-flex align-items-center gap-3 mb-3">
-                <FaEnvelope className="contact-icon" />
-                <span>naturedrop@gmail.com</span>
-              </div>
-
-              <div className="d-flex align-items-center gap-3 mb-3">
-                <FaClock className="contact-icon" />
-                <span>Mon - Sat: 9 AM - 6 PM</span>
-              </div>
-            </div>
-          </div>
-
-          
-          <div className="col-lg-6">
-            <div className="contact-card p-4">
-              <h3 className="text-center contact-title fw-bold mb-4">
-                Send Your Message
-              </h3>
-
-              <div className="row g-3">
-                <div className="col-md-6">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Your Name"
-                  />
-                </div>
-                <div className="col-md-6">
-                  <input
-                    type="email"
-                    className="form-control"
-                    placeholder="Your Email"
-                  />
-                </div>
-                <div className="col-md-6">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Mobile"
-                  />
-                </div>
-                <div className="col-md-6">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Subject"
-                  />
-                </div>
-                <div className="col-12">
-                  <textarea
-                    className="form-control"
-                    placeholder="Leave a message here"
-                    rows="4"
-                  ></textarea>
-                </div>
-                <div className="col-12">
-                  <button className="btn contact-btn w-100 py-2 fw-bold">
-                    Send Message <FaTelegramPlane className="ms-2" />
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div className="gradient-line"></div>
         </div>
+
+        {/* Right Form Card */}
+        <form className="contact-form-card">
+          <h3>Send us a Message</h3>
+
+          <div className="grid-2">
+            <input type="text" placeholder="Full Name" />
+            <input type="email" placeholder="Email Address" />
+          </div>
+          <div className="grid-2">
+            <input type="text" placeholder="Phone Number" />
+            <input type="text" placeholder="Subject" />
+          </div>
+
+          <textarea placeholder="Write your message..." rows="5"></textarea>
+
+          <button className="send-btn">
+            Send Message <FaPaperPlane />
+          </button>
+        </form>
       </div>
     </section>
   );

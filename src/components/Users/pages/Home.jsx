@@ -69,8 +69,8 @@ const Home = ({ list, borrow, handleBorrowedBook }) => {
               <img src={p1} className="d-block w-100 hero-image" alt="Library" />
               <div className="hero-overlay">
                 <div className="hero-content">
-                  <h1 className="hero-title">Welcome to Digital Library</h1>
-                  <p className="hero-description">Discover thousands of books at your fingertips. Borrow, read, and explore a world of knowledge.</p>
+                  <h1 className="hero-title text-white">Welcome to Digital Library</h1>
+                  <p className="hero-description text-white mb-3">Discover thousands of books at your fingertips. Borrow, read, and explore a world of knowledge.</p>
                   <button className="hero-btn">
                     <FaBookmark className="me-2" /> Browse Collection
                   </button>
@@ -81,8 +81,8 @@ const Home = ({ list, borrow, handleBorrowedBook }) => {
               <img src={p2} className="d-block w-100 hero-image" alt="Teachers Day" />
               <div className="hero-overlay">
                 <div className="hero-content">
-                  <h1 className="hero-title">Expand Your Mind</h1>
-                  <p className="hero-description">From classics to contemporary, find books that inspire and educate.</p>
+                  <h1 className="hero-title text-white">Expand Your Mind</h1>
+                  <p className="hero-description text-white mb-3">From classics to contemporary, find books that inspire and educate.</p>
                   <button className="hero-btn">
                     <FaStar className="me-2" /> Featured Books
                   </button>
@@ -93,8 +93,8 @@ const Home = ({ list, borrow, handleBorrowedBook }) => {
               <img src={p3} className="d-block w-100 hero-image" alt="Books" />
               <div className="hero-overlay">
                 <div className="hero-content">
-                  <h1 className="hero-title">Your Reading Journey Starts Here</h1>
-                  <p className="hero-description">Access a curated collection of books across all genres and subjects.</p>
+                  <h1 className="hero-title text-white">Your Reading Journey Starts Here</h1>
+                  <p className="hero-description text-white mb-3">Access a curated collection of books across all genres and subjects.</p>
                   <button className="hero-btn">
                     <FaFilter className="me-2" /> Explore Now
                   </button>

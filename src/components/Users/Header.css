@@ -1,7 +1,8 @@
 /* NAVBAR MAIN - WHITE BACKGROUND */
 .custom-nav {
-  background: #ffffff !important; 
-  border-bottom: 1px solid #e5e7eb; /* light gray border */
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: #e2e8f0;
+  
 }
 
 /* LOGO */
@@ -13,18 +14,22 @@
 
 /* TITLE */
 .nav-title {
-  color: #000 !important;
+  color: #e2e8f0;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
 /* NAV LINKS - BLACK TEXT + LIGHT BLUE HOVER */
 .nav-links .custom-link {
-  color: #000 !important;
+  color: #e2e8f0;
   font-weight: 600;
   letter-spacing: 0.3px;
   padding-bottom: 3px;
   position: relative;
+ 
+}
+.nav-links .custom-link:hover {
+  color: #1da1f2 !important;
 }
 
 /* Hover underline light blue */
@@ -45,17 +50,18 @@
 
 /* Navbar button (mobile) */
 .navbar-toggler {
-  border-color: #000;
+  border-color: #e2e8f0;
+  
 }
 .navbar-toggler-icon {
-  background-color: #000 !important;
+  background-color: #e2e8f0 !important;
 }
 
 /* PROFILE BUTTON */
 .profile-btn {
   background: transparent;
   border: none;
-  color: #000 !important;
+  color: #e2e8f0 !important;
   font-weight: 600;
 }
 .profile-btn:hover {

@@ -42,8 +42,8 @@ function About() {
                 Simplifying Library & Resource Management
               </h2>
               <p className="content-description">
-                Our digital Library Management System revolutionizes how institutes manage books, 
-                automate operations, and provide smarter access to learning materials. From advanced 
+                Our digital Library Management System revolutionizes how institutes manage books,
+                automate operations, and provide smarter access to learning materials. From advanced
                 cataloging to seamless issuing, every process is optimized for efficiency.
               </p>
 
@@ -114,12 +114,12 @@ function About() {
                 </h2>
                 <div className="story-text-wrapper">
                   <p className="story-text">
-                    We began our journey with a simple yet powerful mission — to make libraries smarter, 
+                    We began our journey with a simple yet powerful mission — to make libraries smarter,
                     more accessible, and efficient for students, teachers, and educational institutions worldwide.
                   </p>
                   <p className="story-text">
-                    Today, our LMS proudly serves hundreds of educational environments with seamless book 
-                    management, powerful analytics, and a completely paperless approach that's transforming 
+                    Today, our LMS proudly serves hundreds of educational environments with seamless book
+                    management, powerful analytics, and a completely paperless approach that's transforming
                     how knowledge is accessed and shared.
                   </p>
                 </div>
@@ -139,9 +139,9 @@ function About() {
           </div>
 
           {/* Values Section */}
-          <div className="values-section mb-16">
+          <div className="values-section" style={{ marginBottom: '100px' }}>
             <h2 className="values-title">Our Core Values</h2>
-            <div className="values-grid">
+            <div className="values-grid mb-5" >
               <div className="value-card">
                 <div className="value-icon">🎯</div>
                 <h3 className="value-title">Innovation</h3>

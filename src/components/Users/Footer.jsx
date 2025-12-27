@@ -1,6 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import logo from "../../assets/images/logo.png";
+import MyBooks from './pages/MyBooks';
 
 const Footer = () => {
   return (
@@ -76,7 +77,7 @@ const Footer = () => {
                 </svg>
                 <div>
                   <p className="contact-label">Email</p>
-                  <a href="mailto:info@library.com">info@library.com</a>
+                  <a href="mailto:info@library.com">MyBooks@library.com</a>
                 </div>
               </div>
               <div className="contact-item">
